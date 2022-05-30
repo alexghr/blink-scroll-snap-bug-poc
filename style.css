@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.viewport {
+  border: 2px solid hotpink;
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+  padding: 50px;
+  scroll-snap-type: x mandatory;
+}
+
+.item {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+  background: lightblue;
+}
